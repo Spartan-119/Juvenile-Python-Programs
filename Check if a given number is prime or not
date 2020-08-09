@@ -7,15 +7,25 @@ Created on Sun Aug  9 16:20:55 2020
 
 @author: Abin
 """
+import time
 
-num = int(input("Enter a positive integer: "))
+num = 101 #int(input("Enter a positive integer: "))
+
+t0 = time.perf_counter()
+print(t0)
 
 if num < 1:
     print("Not a prime number")
 else:
-    for i in range(2, (num//2 + 1)):
+    for i in range(2, (num//2+1)):
         if num % i == 0:
             print("Not a prime number")
             break
     else:
         print("Prime Number")
+
+t1 = time.perf_counter()
+print(t1)
+print()
+diff = t1 - t0
+print("Total time taken for execution = ", diff)
