@@ -10,8 +10,10 @@ Created on Tue Aug 11 20:05:12 2020
 
 word = "malayalam"
 x = ""
-for i in range(len(word), 0):
+for i in range(0, len(word)):
     x = word[i] + x
+    #print(x)
+
 if (x == word):
     print("Yes its a Palindrome")
 else:
