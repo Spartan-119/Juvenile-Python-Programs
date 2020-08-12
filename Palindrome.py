@@ -36,6 +36,10 @@ def reverse(string):
     if len(string) == 0:
         return string
     else:
+        ''' If not equal to 0, the reverse function is recursively 
+        called to slice the part of the string except the 
+        first character and concatenate the 
+        first character to the end of the sliced string. '''
         return reverse(string[1:]) + string[0]
     
 def palindrome(a):
