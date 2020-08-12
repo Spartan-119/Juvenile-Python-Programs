@@ -6,7 +6,7 @@ Created on Tue Aug 11 20:05:12 2020
 @author: abin
 """
 
-''' Method 1 using an extra variable '''
+''' Method 1 using ITERATION '''
 
 word = "malayalam"
 x = ""
